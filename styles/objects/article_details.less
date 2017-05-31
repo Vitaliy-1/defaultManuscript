@@ -1,0 +1,186 @@
+/**
+ * @file styles/objects/article_details.less
+ *
+ * Copyright (c) 2014-2017 Simon Fraser University Library
+ * Copyright (c) 2003-2017 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to a view of an article with all details
+ * @link templates/frontend/objects/article_details.tpl
+ */
+.obj_article_details {
+
+	.subtitle {
+		font-family: @font;
+	}
+
+	.authors,
+	.doi {
+		font-family: @font-heading;
+	}
+
+	.orcid a,
+	.doi a {
+		color: @text;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: @primary;
+			text-decoration: underline;
+		}
+	}
+
+	.orcid a {
+		font-size: 10px;
+		color: @text-light;
+	}
+
+	.authors li {
+		margin-bottom: @double;
+	}
+
+	.main_entry {
+
+		.label {
+			display: inline-block;
+			padding: 0 0 @half;
+			border-bottom: 3px solid @accent;
+			color: @text-light;
+			text-transform: uppercase;
+		}
+
+		.doi .label {
+			display: inline;
+			padding: 0;
+			border: none;
+			text-transform: none;
+		}
+	}
+
+	.row,
+	.main_entry,
+	.entry_details {
+		border: none;
+	}
+
+	.author_bios {
+
+		.sub_item {
+
+			.label {
+				border-bottom: none;
+				text-transform: none;
+			}
+		}
+	}
+
+	.entry_details {
+		margin-left: 0;
+		margin-right: 0;
+
+		.label {
+			font-weight: @bold;
+			text-transform: uppercase;
+		}
+
+		.item {
+			margin: @triple 0;
+			padding: 0;
+			border-bottom: none;
+			border-radius: @radius;
+			background: @bg-light-shade;
+			box-shadow: 0 0 1px rgba(0,0,0,0.4);
+
+			.label + .value {
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+			}
+		}
+
+		.sub_item {
+			padding: 0;
+			margin-bottom: 0;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.label {
+				color: @text-light;
+			}
+		}
+
+		.item > .label,
+		.sub_item:first-child > .label {
+			padding: 0.5em @double;
+			background: @bg-shade;
+			border-top-left-radius: @radius;
+			border-top-right-radius: @radius;
+		}
+
+		.item > .value,
+		.sub_item .value {
+			padding: @double;
+			border-radius: @radius;
+		}
+
+		// Create more light-weight headers for subsequent sub-item labels
+		.sub_item:not(:first-child) .label {
+			display: inline-block;
+			padding: 0.5em 0;
+			margin: 0 @double;
+			border-bottom: 3px solid @accent;
+		}
+
+		.cover_image {
+			background: transparent;
+			box-shadow: none;
+
+			img {
+				display: block;
+				border-radius: @radius;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		.item.galleys {
+			box-shadow: none;
+
+			.galleys_links {
+				padding: 0;
+			}
+		}
+
+		.galleys_links {
+
+			> li {
+				display: block;
+				margin-bottom: 0.5em;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				a {
+					display: block;
+				}
+			}
+		}
+
+		.citation_display {
+			margin-bottom: 0;
+		}
+
+		.item.copyright {
+			background: transparent;
+			box-shadow: none;
+		}
+
+		@media(min-width: @screen-tablet) {
+			width: 240px;
+			margin-left: 30px;
+		}
+	}
+}

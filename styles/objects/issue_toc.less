@@ -1,0 +1,73 @@
+/**
+ * @file styles/objects/issue_toc.less
+ *
+ * Copyright (c) 2014-2017 Simon Fraser University Library
+ * Copyright (c) 2003-2017 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Styles applying to an issue table of contents view
+ * @link templates/frontend/objects/issue_toc.tpl
+ */
+.obj_issue_toc {
+
+	.heading .pub_id,
+	.heading .published {
+		font-family: @font-heading;
+		font-size: @font-sml;
+	}
+
+	.heading .pub_id .type,
+	.heading .published .label {
+		font-weight: @bold;
+		color: @text-light;
+		text-transform: uppercase;
+	}
+
+	.heading .pub_id .id,
+	.heading .published .value {
+		margin-left: 0.5em;
+	}
+
+	.heading .pub_id .id a {
+		color: @text;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: @primary-lift;
+			text-decoration: underline;
+		}
+	}
+
+	> .galleys,
+	.section {
+		margin: 0;
+		padding: 0;
+		border: none;
+
+		h2 {
+			position: relative;
+			display: inline-block;
+			top: auto;
+			left: auto;
+			padding: 0 0 @half;
+			border-bottom: 3px solid @accent;
+			background: transparent;
+			text-transform: uppercase;
+			font-weight: @bold;
+		}
+	}
+
+	.galleys_links li {
+		margin-bottom: 0.5em;
+	}
+
+	.pages {
+		font-family: @font-heading;
+	}
+
+	.cover img {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

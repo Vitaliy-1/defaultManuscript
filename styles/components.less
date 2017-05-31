@@ -1,0 +1,88 @@
+/**
+ * @file styles/components.less
+ *
+ * Copyright (c) 2014-2017 Simon Fraser University Library
+ * Copyright (c) 2003-2017 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Reusable components
+ */
+
+// Buttons
+.cmp_manuscript_button {
+	font-family: @font-heading;
+	font-weight: @bold;
+	text-transform: uppercase;
+	background: @bg-base;
+	color: @text-bg-base;
+	border: none;
+
+	&:hover,
+	&:focus {
+		background: @accent;
+	}
+}
+
+// Breadcrumb navigation
+.cmp_breadcrumbs {
+	padding: @triple 0;
+	font-family: @font-heading;
+	font-size: @font-sml;
+	color: @text-light;
+	text-transform: uppercase;
+
+	> ol {
+		padding: 0;
+		margin: 0;
+	}
+
+	.current {
+		text-transform: none;
+
+		h1 {
+			font-family: @font-heading;
+		}
+	}
+
+	.separator {
+		padding: 0 0.1em;
+		opacity: 0.3;
+	}
+}
+
+// Pagination (eg - issue archive)
+.cmp_pagination {
+	font-family: @font-heading;
+}
+
+
+// Announcements
+.cmp_announcements {
+    border: none;
+
+	> li {
+		border-bottom: none;
+	}
+
+	.obj_announcement_summary h2,
+	.obj_announcement_summary h3,
+    .obj_announcement_summary h4,
+    .date,
+    .read_more {
+        font-family: @font-heading;
+        font-size: @font-sml;
+        font-weight: @bold;
+    }
+
+	.read_more {
+		text-transform: uppercase;
+	}
+
+    .date {
+        font-weight: @normal;
+
+		&:before {
+			color: @accent;
+		}
+    }
+}

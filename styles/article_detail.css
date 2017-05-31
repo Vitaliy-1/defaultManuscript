@@ -1,0 +1,51 @@
+ul#navigationPrimary a {
+    text-decoration: none;
+}
+/* intra-article navigation */
+/*
+body.pkp_page_article.pkp_op_view nav.bs-docs-sidebar.affix {
+    right: 14%;
+    width: 30%;
+}
+*/
+/* backround color for article */
+body {
+    background: #ddd;
+}
+body.pkp_page_article.pkp_op_view {
+    background: #ddd;
+}
+
+body.pkp_page_article.pkp_op_view div.pkp_structure_content.has_sidebar{
+    background-color: #ddd;
+}
+
+div.pkp_structure_page {
+    box-shadow: none;
+}
+
+div.row > ul.ui-tabs-nav.ui-corner-all.ui-helper-reset.ui-helper-clearfix.ui-widget-header {
+    background-color: #ddd;
+}
+
+/* article tabs */
+div.before_title > p {
+    margin: 0;
+}
+
+/* breadcumbs */
+nav.cmp_breadcrumbs.col-lg-12.col-md-12.col-sm-12.col-xs-12 {
+    margin-top: 30px;
+}
+
+/* detail tab */
+div.entry_details.ui-tabs-panel.ui-corner-bottom.ui-widget-content {
+    width: 90%;
+}
+div#details_tab div.panel.panel-default{
+    margin-bottom: 0;
+}
+/* links to galleys */
+a.obj_galley_link {
+    display: block;
+}

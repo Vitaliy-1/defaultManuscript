@@ -1,0 +1,89 @@
+/**
+ * @file plugins/themes/defaultManuscript/styles/index.less
+ *
+ * Copyright (c) 2014-2017 Simon Fraser University Library
+ * Copyright (c) 2003-2017 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * @brief Layout styles which implement the boxed layout
+ *
+ */
+
+// A grey background on large screens
+body {
+	background: @bg-shade;
+}
+
+// A white background for the boxed content area
+.pkp_structure_page {
+	margin: 0 auto;
+	max-width: @screen-lg-desktop-container;
+	background: @bg;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+	@media(min-width: @screen-lg-desktop) {
+		margin-top: @triple;
+		margin-bottom: @triple;
+	}
+}
+
+.pkp_structure_footer_wrapper {
+	background: @bg-light-shade;
+	border-top: @bg-border;
+	border-bottom: @double solid @bg-base;
+}
+
+// Removes the left and right borders around the main content panel
+.pkp_structure_main:before,
+.pkp_structure_main:after {
+	display: none;
+}
+
+.pkp_structure_content {
+	padding-top: 0;
+}
+
+.pkp_structure_sidebar {
+
+	@media(min-width: @screen-desktop) {
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 300px;
+			border-left: @bg-border;
+		}
+
+		// Child elements need position to appear above the background element
+		> * {
+			position: relative;
+		}
+	}
+}
+
+// Center the content panel when no sidebar is present
+// @todo This was added to the default theme after OJS 3.0.2 was released.
+// The styles can be removed for future versions.
+.pkp_structure_main:first-child:last-child {
+
+	@media(min-width: @screen-desktop) {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: @quadruple;
+
+		// Aligns the left and right borders
+		@no-sidebar-margins: @sidebar-width / 2;
+		&:before {
+			left: @no-sidebar-margins;
+		}
+
+		&:after {
+			left: auto;
+			right: @no-sidebar-margins;
+		}
+	}
+}
