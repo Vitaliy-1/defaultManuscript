@@ -1,18 +1,10 @@
 {**
  * templates/frontend/components/breadcrumbs_article.tpl
  *
- * Copyright (c) 2014-2016 Simon Fraser University Library
- * Copyright (c) 2003-2016 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * Copyright (c) 2017 Vitaliy Bezsheiko, MD, Department of Psychosomatic Medicine and Psychotherapy, Bogomolets National Medical University, Kyiv, Ukraine
+ * Distributed under the GNU GPL v3.
  *
- * @brief Display a breadcrumb nav item showing the current page. This basic
- *  version is for top-level pages which only need to show the Home link. For
- *  category- and series-specific breadcrumb generation, see
- *  templates/frontend/components/breadcrumbs_catalog.tpl.
- *
- * @uses $currentTitle string The title to use for the current page.
- * @uses $currentTitleKey string Translation key for title of current page.
- * @uses $issue Issue Issue this article was published in.
+ * for use in default Manuscript theme with jatsParser plugin
  *}
 
 <nav class="cmp_breadcrumbs col-lg-12 col-md-12 col-sm-12 col-xs-12" role="navigation" aria-label="{translate key="navigation.breadcrumbLabel"}">

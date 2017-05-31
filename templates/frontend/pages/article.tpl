@@ -3,6 +3,7 @@
  *
  * Copyright (c) 2014-2016 Simon Fraser University Library
  * Copyright (c) 2003-2016 John Willinsky
+ * Modified by Vitaliy Bezsheiko, MD, 2017 for use with jatsParser plugin
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * @brief Display the page to view an article with all of it's details.

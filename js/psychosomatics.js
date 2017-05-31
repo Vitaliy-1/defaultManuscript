@@ -1,3 +1,12 @@
+/**
+ * @file js/psychosomatics.js
+ *
+ * Copyright (c) 2017 Vitaliy Bezsheiko, MD, Department of Psychosomatic Medicine and Psychotherapy, Bogomolets National Medical University, Kyiv, Ukraine
+ * Distributed under the GNU GPL v3.
+ *
+ * @brief for use in default Manuscript theme with jatsParser plugin
+ */
+
 /* Adding header */
 $('<header></header>').prependTo('body');
 
