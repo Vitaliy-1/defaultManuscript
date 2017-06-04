@@ -14,7 +14,7 @@
  */
 import('lib.pkp.classes.plugins.ThemePlugin');
 
-class DefaultManuscriptChildThemePlugin extends ThemePlugin {
+class ManuscriptJats extends ThemePlugin {
 	/**
 	 * Initialize the theme's styles, scripts and hooks. This is only run for
 	 * the currently active theme.
@@ -36,8 +36,8 @@ class DefaultManuscriptChildThemePlugin extends ThemePlugin {
 
         // Add bootstrap and jquery ui javascript
         $this->addScript('my-javascript1', 'js/jquery.min.js');
-        $this->addScript('my-javascript4', 'jquery-ui/jquery-ui.min.js');
-        $this->addScript('my-javascript2', 'js/bootstrap.min.js');
+        $this->addScript('my-javascript2', 'jquery-ui/jquery-ui.min.js');
+        $this->addScript('my-javascript3', 'js/bootstrap.min.js');
 
 		// Add custom styles
 		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
@@ -50,7 +50,7 @@ class DefaultManuscriptChildThemePlugin extends ThemePlugin {
 
 		// Add the option for an accent color
 		$this->addOption('accentColour', 'colour', array(
-			'label' => 'plugins.themes.defaultManuscript.option.accentColour.label',
+			'label' => 'plugins.themes.manuscript-jats.option.accentColour.label',
 			'description' => 'plugins.themes.default.option.colour.description',
 			'default' => '#F7BC4A',
 		));
@@ -106,7 +106,7 @@ class DefaultManuscriptChildThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDisplayName() {
-		return __('plugins.themes.defaultManuscript.name');
+		return __('plugins.themes.manuscript-jats.name');
 	}
 
 	/**
@@ -114,7 +114,7 @@ class DefaultManuscriptChildThemePlugin extends ThemePlugin {
 	 * @return string
 	 */
 	function getDescription() {
-		return __('plugins.themes.defaultManuscript.description');
+		return __('plugins.themes.manuscript-jats.description');
 	}
 }
 

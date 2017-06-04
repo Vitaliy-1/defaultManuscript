@@ -10,13 +10,7 @@
 ul#navigationPrimary a {
     text-decoration: none;
 }
-/* intra-article navigation */
-/*
-body.pkp_page_article.pkp_op_view nav.bs-docs-sidebar.affix {
-    right: 14%;
-    width: 30%;
-}
-*/
+
 /* backround color for article */
 body {
     background: #ddd;
@@ -54,7 +48,28 @@ div.entry_details.ui-tabs-panel.ui-corner-bottom.ui-widget-content {
 div#details_tab div.panel.panel-default{
     margin-bottom: 0;
 }
+
 /* links to galleys */
 a.obj_galley_link {
     display: block;
+}
+
+/* for mobiles and tablets */
+@media (min-width: 768px) {
+    div.pkp_structure_content {
+        width: 100%;
+    }
+}
+
+/* right navigational menu*/
+div.fornav {
+    position: relative;
+}
+div.fornav nav.bs-docs-sidebar.affix {
+    width: auto;
+    right: auto;
+    max-width: 450px;
+}
+div.fornav nav.bs-docs-sidebar.affix-bottom {
+    width: auto;
 }
