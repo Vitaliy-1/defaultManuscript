@@ -66,10 +66,16 @@ div.fornav {
     position: relative;
 }
 div.fornav nav.bs-docs-sidebar.affix {
-    width: auto;
     right: auto;
     max-width: 450px;
 }
 div.fornav nav.bs-docs-sidebar.affix-bottom {
-    width: auto;
+    max-width: 450px;
 }
+
+/* fix for login form color */
+form.cmp_form span.label {
+    color: black;
+    text-align: left;
+}
+
