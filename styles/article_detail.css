@@ -78,4 +78,10 @@ form.cmp_form span.label {
     color: black;
     text-align: left;
 }
+/* fix for search page */
+.cmp_form .label {
+    color: black;
+    text-align: left;
+}
+
 
