@@ -84,4 +84,13 @@ form.cmp_form span.label {
     text-align: left;
 }
 
+/* space between paragraphs and headings */
+div.pkp_structure_main p {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+}
+div.pkp_structure_main h2 {
+    margin-top: 25px;
+}
 
