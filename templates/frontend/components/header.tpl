@@ -152,7 +152,7 @@
 				{else}
 					{include file="frontend/components/breadcrumbs_article.tpl" currentTitleKey="article.article"}
 				{/if}
-				<div class="fornav col-lg-5 col-md-5" role="complementary" id="navwrap">
+				<div class="fornav col-lg-4 col-md-4" role="complementary" id="navwrap">
 
 
 					{* Article Galleys *}
@@ -222,4 +222,4 @@
 					</nav>
 				</div>
 			{/if}
-			<div id="pkp_content_main" class="pkp_structure_main" role="main">
+			<div id="pkp_content_main" class="pkp_structure_main col-lg-8 col-md-8 col-sm-12 col-xs-12" role="main">
