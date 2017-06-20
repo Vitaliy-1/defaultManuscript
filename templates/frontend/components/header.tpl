@@ -222,4 +222,4 @@
 					</nav>
 				</div>
 			{/if}
-			<div id="pkp_content_main" class="pkp_structure_main col-lg-8 col-md-8 col-sm-12 col-xs-12" role="main">
+			<div id="pkp_content_main" class="pkp_structure_main{if $requestedPage|escape == "article"} col-lg-8 col-md-8 col-sm-12 col-xs-12{/if}" role="main">
