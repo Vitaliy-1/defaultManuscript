@@ -26,6 +26,11 @@ class ManuscriptJats extends ThemePlugin {
 		// Initialize the parent theme
 		$this->setParent('defaultthemeplugin');
 
+        $this->removeScript('jQueryTagIt');
+        $this->removeScript('popper');
+        $this->removeScript('bsUtil');
+        $this->removeScript('bsDropdown');
+
 		// Add bootstrap and jquery ui css
         $this->addStyle('my-custom-style1', 'styles/bootstrap/bootstrap.min.css');
         $this->addStyle('my-custom-style2', 'styles/bootstrap/bootstrap-theme.min.css');
@@ -35,8 +40,8 @@ class ManuscriptJats extends ThemePlugin {
         $this->addStyle('my-custom-style6', 'styles/article_detail.css');
 
         // Add bootstrap and jquery ui javascript
-        $this->addScript('my-javascript1', 'js/jquery.min.js');
-        $this->addScript('my-javascript2', 'jquery-ui/jquery-ui.min.js');
+        //$this->addScript('my-javascript1', 'js/jquery.min.js');
+        //$this->addScript('my-javascript2', 'jquery-ui/jquery-ui.min.js');
         $this->addScript('my-javascript3', 'js/bootstrap.min.js');
 
 		// Add custom styles
