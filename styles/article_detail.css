@@ -94,5 +94,15 @@ div.pkp_structure_main h2 {
     margin-top: 25px;
 }
 
+/* new How to Cite block */
+.citation_formats #cslCitationFormats .label {
+    border-top: none;
+}
+
+/* doi */
+.obj_article_details .main_entry .doi {
+    padding-left: 0;
+}
+
 
 

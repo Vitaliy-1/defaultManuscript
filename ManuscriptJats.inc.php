@@ -42,6 +42,9 @@ class ManuscriptJats extends ThemePlugin {
 		// Add custom styles
 		$this->modifyStyle('stylesheet', array('addLess' => array('styles/index.less')));
 
+		// Add custom menus
+        $this->addMenuArea(array('primary', 'user'));
+
 		// Remove the typography options of the parent theme.
 		// `removeOption` was introduced in OJS 3.0.2
 		if (method_exists($this, 'removeOption')) {
